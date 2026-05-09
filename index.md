@@ -11,15 +11,15 @@ I am a Biomedical Engineering and Computer Science student at Duke University fo
 
 ## Featured Projects
 
-**[Autonomous Robotics & Integrated Design](IDC.md)**
+**[Autonomous Robotics & Integrated Design](projects/IDC.md)**
 *   **The Tech:** Arduino, Multi-sensor Integration (QTI, RFID), XBee Wireless Protocols
 *   **The Work:** Engineered a robot for complex path navigation within a five-bot team. Integrated wireless protocols to transmit real-time data and validated performance through consecutive trials.
 
-**[Integrated Embedded System](lightbox.md)** 
+**[Integrated Embedded System](projects/lightbox.md)** 
 *   **The Tech:** C++, PCB Design, KiCad
 *   **The Work:** Developed firmware for real-time sensor processing and designed custom PCBs for system integration.
 
-**[Distal Forearm Fracture Model](distal.md)**
+**[Distal Forearm Fracture Model](projects/distal.md)**
 *   **The Tech:** OnShape CAD, 3D Printing
 *   **The Work:** Designed a 3D-printed training device used for orthopedic resident education.
 
