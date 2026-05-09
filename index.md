@@ -2,14 +2,11 @@
 layout: default
 title: Carlota Gillard Gonzalez Portfolio
 ---
----
-layout: default
-title: Home
----
 
 # Hi, I'm Carlota 👋
 
-I am a Biomedical Engineering and Computer Science student at Duke University focusing on medical device innovation and embedded systems.
+[cite_start]I am a Biomedical Engineering and Computer Science student at Duke University focusing on medical device innovation and embedded systems[cite: 6, 7].
+
 ---
 
 ## Featured Projects
@@ -32,8 +29,10 @@ I am a Biomedical Engineering and Computer Science student at Duke University fo
 
 ## About Me
 
-A couple of sentences summarizing your background — school, field of study, skills, interests. Keep it light here since you'll have a full About page.
+I am a Biomedical Engineering and Computer Science double major at Duke University’s Pratt School of Engineering class of 2028. Originally from Spain and Belgium, I grew up in Miami, Florida. I have always been driven by a curiosity for how things work, and I chose to pursue an education in Biomedical Engineering as a result of my fascination with both medicine and architecture.  
 
+This unique combination of interests fuels my work in medical device innovation, where I focus on the structural integrity and technical logic of modern healthcare solutions.
+  
 [Learn more about me →](about.md)
 
 ---
