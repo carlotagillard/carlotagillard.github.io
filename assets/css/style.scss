@@ -1,0 +1,10 @@
+---
+---
+@import "{{ site.theme }}";
+
+.page-header {
+  background-image: url("{{ site.baseurl }}/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; /* This keeps your name/text white */
+}
