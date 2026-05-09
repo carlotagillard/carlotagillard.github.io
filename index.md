@@ -2,40 +2,44 @@
 layout: default
 title: Carlota Gillard Gonzalez Portfolio
 ---
+---
+layout: default
+title: Home
+---
 
-# Featured Engineering Projects
+# Hi, I'm Carlota 👋
+
+I am a Biomedical Engineering and Computer Science student at Duke University focusing on medical device innovation and embedded systems.
+---
+
+## Featured Projects
+
+**[Autonomous Robotics & Integrated Design](projects.md)**
+*   **The Tech:** Arduino, Multi-sensor Integration (QTI, RFID), XBee Wireless Protocols
+*   **The Work:** Engineered a robot utilizing a C++ State Machine for complex path navigation within a five-bot team. Integrated wireless protocols to transmit real-time data and validated performance through consecutive trials.
+
+**[Integrated Embedded System](projects.md)** 
+*   **The Tech:** C++, PCB Design, KiCad
+*   **The Work:** Developed firmware for real-time sensor processing and designed custom PCBs for system integration.
+
+**[Distal Forearm Fracture Model](projects.md)**
+*   **The Tech:** OnShape CAD, 3D Printing
+*   **The Work:** Designed a 3D-printed training device used for orthopedic resident education.
+
+> 👉 See all my projects on the [Projects](projects.md) page.
 
 ---
 
-## 🛠️ Integrated Embedded System 
-[cite_start]**Lead Designer** [cite: 20]
+## About Me
 
-* [cite_start]**The Hardware:** Designed a custom KiCad PCB and a 3D-printed enclosure featuring snap-fit joints and panel-mounted hardware. [cite: 22]
-* [cite_start]**The Firmware:** Developed C++ firmware utilizing a State Machine and hardware interrupts for real-time input processing. [cite: 23]
-* [cite_start]**Validation:** Quantified PWM linearity and timing precision within a 95% Confidence Interval using Python (Jupyter). [cite: 24]
+A couple of sentences summarizing your background — school, field of study, skills, interests. Keep it light here since you'll have a full About page.
 
-![PCB Design](images/embedded_pcb.png)
+[Learn more about me →](about.md)
 
 ---
 
-## 🤖 Autonomous Robotics & Integrated Design 
-[cite_start]**Systems Integration Engineer** [cite: 25]
+## Get In Touch
 
-* [cite_start]**The System:** Engineered a robot utilizing a C++ State Machine for complex path navigation within a multi-bot team. [cite: 26, 28]
-* [cite_start]**Integration:** Integrated multi-sensor (QTI, RFID) and XBee wireless protocols to detect and transmit real-time data. [cite: 28]
-* [cite_start]**Performance:** Validated system reliability through consecutive trials, measuring timing precision and sensor accuracy. [cite: 29]
-
-![Robot Prototype](images/robotics.png)
-
----
-
-## 🦴 Distal Forearm Fracture Model
-[cite_start]**Engineer & Designer** [cite: 30, 31]
-
-* [cite_start]**The Innovation:** Engineered a 3D-printed training model in OnShape for distal forearm fracture reduction. [cite: 32]
-* [cite_start]**Clinical Collaboration:** Translated clinical requirements from the Duke University School of Medicine to enhance medical training realism. [cite: 35]
-* [cite_start]**Design Cycle:** Executed end-to-end development, from initial CAD prototyping to final physical testing. [cite: 34]
-
-![CAD Render](images/medical_model.png)
-
----
+📧 [carlota.gillard@gmail.com](mailto:carlota.gillard@gmail.com)  
+🔗 [LinkedIn](www.linkedin.com/in/carlotagillard)  
+🐙 [GitHub](https://github.com/carlotagillard)
