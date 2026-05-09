@@ -11,19 +11,17 @@ I am a Biomedical Engineering and Computer Science student at Duke University fo
 
 ## Featured Projects
 
-**[Autonomous Robotics & Integrated Design](projects.md)**
+**[Autonomous Robotics & Integrated Design](IDC.md)**
 *   **The Tech:** Arduino, Multi-sensor Integration (QTI, RFID), XBee Wireless Protocols
-*   **The Work:** Engineered a robot utilizing a C++ State Machine for complex path navigation within a five-bot team. Integrated wireless protocols to transmit real-time data and validated performance through consecutive trials.
+*   **The Work:** Engineered a robot for complex path navigation within a five-bot team. Integrated wireless protocols to transmit real-time data and validated performance through consecutive trials.
 
-**[Integrated Embedded System](projects.md)** 
+**[Integrated Embedded System](lightbox.md)** 
 *   **The Tech:** C++, PCB Design, KiCad
 *   **The Work:** Developed firmware for real-time sensor processing and designed custom PCBs for system integration.
 
-**[Distal Forearm Fracture Model](projects.md)**
+**[Distal Forearm Fracture Model](distal.md)**
 *   **The Tech:** OnShape CAD, 3D Printing
 *   **The Work:** Designed a 3D-printed training device used for orthopedic resident education.
-
-> 👉 See all my projects on the [Projects](projects.md) page.
 
 ---
 
@@ -40,5 +38,7 @@ This unique combination of interests fuels my work in medical device innovation,
 ## Get In Touch
 
 📧 [carlota.gillard@gmail.com](mailto:carlota.gillard@gmail.com)
+
 🔗 [LinkedIn](https://www.linkedin.com/in/carlotagillard)
+
 🐙 [GitHub](https://github.com/carlotagillard)
