@@ -5,7 +5,7 @@ title: Carlota Gillard Gonzalez Portfolio
 
 # Hi, I'm Carlota 👋
 
-[cite_start]I am a Biomedical Engineering and Computer Science student at Duke University focusing on medical device innovation and embedded systems[cite: 6, 7].
+I am a Biomedical Engineering and Computer Science student at Duke University focusing on medical device innovation and embedded systems.
 
 ---
 
@@ -39,6 +39,6 @@ This unique combination of interests fuels my work in medical device innovation,
 
 ## Get In Touch
 
-📧 [carlota.gillard@gmail.com](mailto:carlota.gillard@gmail.com)  
-🔗 [LinkedIn](www.linkedin.com/in/carlotagillard)  
+📧 [carlota.gillard@gmail.com](mailto:carlota.gillard@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/carlotagillard)
 🐙 [GitHub](https://github.com/carlotagillard)
