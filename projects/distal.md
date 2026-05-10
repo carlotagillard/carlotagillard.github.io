@@ -27,7 +27,7 @@ title: Distal Forearm Fracture Model
 
 ## The Work & Results
 <div style="display: flex; align-items: center; gap: 30px;">
-  <img src="../images/distal/TeamPicture.jpeg" alt="Team Picture.jpeg" width="250" style="border-radius: 10px;">
+  <img src="../images/distal/TeamPicture.png" alt="Team Picture.jpeg" width="250" style="border-radius: 10px;">
   <img src="../images/distal/final vertical fractured.jpg" alt="Final Fractured Model" width="250" style="border-radius: 10px;">
   <p>
     - Managed the end-to-end design cycle within a four-person engineering team from September to December 2024.
