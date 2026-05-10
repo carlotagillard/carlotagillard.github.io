@@ -8,9 +8,11 @@ title: About Me
 <div style="display: flex; align-items: center; gap: 30px;">
   <img src="../images/profile.jpg" alt="Carlota Gillard" width="250" style="border-radius: 10px;">
   <p>
-    Carlota was born in Spain, to a Spanish mother and Belgian father. When she was 6 years old, she moved to Miami. Surrounded by ...
-    A few sentences about yourself — where you're from (Spain, Belgium, Miami!), what drives you, 
-    your personality beyond just academics.
+    Originally born in Spain to a Spanish mother and Belgian father, I moved to Miami at the age of six. Growing up in such a vibrant, multicultural city sparked a deep appreciation for diverse perspectives and a curiosity about how different systems—both cultural and structural—interact.
+
+  I have always been fascinated by both medicine and architecture, and I eventually found the perfect intersection of the two in Biomedical Engineering. My path at Duke University has since exposed me to a wide range of projects, from embedded systems to surgical training models, each reinforcing my desire to innovate at the crossroads of tech and health.
+
+  While I am still exploring the possibility of Medical School, my ultimate goal is simple: I want to help others. I have developed a strong focus on orthopedics, but I am equally passionate about contributing to female reproductive medicine and technology. Looking ahead, I hope to join organizations like Doctors Without Borders or Engineers Without Borders, where I can apply my engineering background to help those in the world's most underserved communities. 
   </p>
 </div>
 
@@ -18,15 +20,18 @@ title: About Me
 
 **Duke University — Pratt School of Engineering, Class of 2028**  
 *B.S. Biomedical Engineering & B.A. Computer Science* 
+
 Relevant coursework: Quantitative Physiology with Biostatistical Applications, Medtech Prototyping Skills, Algorithms and Data
 Structures, Modeling Cellular and Molecular Systems, and Mechanics of Solids
 
 **School for Advanced Studies, Class of 2024**  
 *Magna Cum Laude*
+
 Ranked 3rd Best Public Highschool in America in 2024
 
 **Miami Dade College, Class of 2024**  
 *Associate in Arts with Highest Honors*
+
 Attened through Dual Enrollment
 
 ## Skills
