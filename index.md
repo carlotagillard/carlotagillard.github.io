@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Carlota Gillard Gonzalez Portfolio
+title: Carlota Gillard Portfolio
 ---
 
 # Hi, I'm Carlota 👋
