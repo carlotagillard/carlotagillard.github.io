@@ -3,21 +3,34 @@ layout: default
 title: About Me
 ---
 
-![Carlota Gillard](assets/images/profile.jpg)
+![Carlota Gillard](images/profile.jpg)
 
 ## Who I Am
+
 A few sentences about yourself — where you're from (Spain, Belgium, Miami!), what drives you, your personality beyond just academics.
 
 ## Education
+
 **Duke University — Pratt School of Engineering, Class of 2028**  
-B.S. Biomedical Engineering & Computer Science  
-Relevant coursework: (list a few classes)
+B.S. Biomedical Engineering & B.A. Computer Science  
+Relevant coursework: Quantitative Physiology with Biostatistical Applications, Medtech Prototyping Skills, Algorithms and Data
+Structures, Modeling Cellular and Molecular Systems, and Mechanics of Solids
+
+**School for Advanced Studies, Class of 2024**  
+*Magna Cum Laude*
+Ranked 3rd Best Public Highschool in America in 2024
+
+**Miami Dade College, Class of 2024**  
+*Associate in Arts with Highest Honors*
+Attened through Dual Enrollment
 
 ## Skills
-- **Programming:** C++, Python, etc.
-- **Hardware:** PCB Design, KiCad, Arduino
-- **Design:** OnShape CAD, 3D Printing
-- **Other:** anything else relevant
+
+- **Programming:** C++, Python, and Java
+- **Hardware:** PCB Design in KiCad, Arduino, MATLAB, and GitHub
+- **Design:** OnShape CAD, 3D Printing, and Rapid Prototyping
+- **Languages:** English, Spanish, and French
+- **BioStatistics:** ANOVA, Power Analysis, and Hypothesis Testing
 
 ## Experience & Involvement
 Any clubs, research, internships, or volunteering — even if small, it counts!
