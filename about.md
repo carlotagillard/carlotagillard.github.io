@@ -3,7 +3,13 @@ layout: default
 title: About Me
 ---
 
-![Carlota Gillard](images/profile.jpg)
+<div style="display: flex; align-items: center; gap: 30px;">
+  <img src="../images/profile.jpg" alt="Carlota Gillard" width="250" style="border-radius: 10px;">
+  <p>
+    A few sentences about yourself — where you're from (Spain, Belgium, Miami!), what drives you, 
+    your personality beyond just academics.
+  </p>
+</div>
 
 ## Who I Am
 
