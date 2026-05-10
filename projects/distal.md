@@ -3,8 +3,8 @@ layout: default
 title: Distal Forearm Fracture Model
 ---
 
-<div style="display: flex; align-items: center">
-  <img src="../images/distal/final poster.png" alt="Final Poster" width="250" style="border-radius: 10px;">
+<div style="display: flex; justify-content: center;">
+  <img src="../images/distal/final poster.png" alt="Final Poster" width="600" style="border-radius: 10px;">
 </div>
 
 ## Overview
@@ -19,13 +19,13 @@ title: Distal Forearm Fracture Model
 ## The Work & Results
 <div style="display: flex; align-items: center; gap: 30px;">
   <div style="display: flex; flex-direction: column; gap: 15px;">
-    <img src="../images/distal/TeamPicture.png" alt="Team Picture" width="250" style="border-radius: 10px;">
-    <img src="../images/distal/final vertical fractured.jpg" alt="Final Fractured Model" width="250" style="border-radius: 10px;">
+    <img src="../images/distal/TeamPicture.png" alt="Team Picture" width="350" style="border-radius: 10px;">
+    <img src="../images/distal/final vertical fractured.jpg" alt="Final Fractured Model" width="350" style="border-radius: 10px;">
   </div>
-  <p>
-    - Managed the end-to-end design cycle within a four-person engineering team from September to December 2024.<br>
-    - Acted as the lead designer to translate surgical requirements from Dr. Border into a functional training device for residents.
-  </p>
+  <ul>
+    <li>Managed the end-to-end design cycle within a four-person engineering team from September to December 2024.</li>
+    <li>Acted as the lead designer to translate surgical requirements from Dr. Border into a functional training device for residents.</li>
+  </ul>
 </div>
 
 ## Results & Testing
@@ -35,12 +35,12 @@ title: Distal Forearm Fracture Model
 
 <div style="display: flex; justify-content: center; gap: 30px;">
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../images/distal/Testing at Hospital.jpeg" alt="Testing at Hospital" width="250" style="border-radius: 10px;">
-    <p style="text-align: center; width: 250px;">Image of ER doctors trying to reduce the Model.</p>
+    <img src="../images/distal/Testing at Hospital.jpeg" alt="Testing at Hospital" width="350" style="border-radius: 10px;">
+    <p style="text-align: center; width: 350px;">Image of ER doctors trying to reduce the Model.</p>
   </div>
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../images/distal/BroderTestWResidents.jpeg" alt="Broder Testing With Residents" width="250" style="border-radius: 10px;">
-    <p style="text-align: center; width: 250px;">Image of Dr. Josh Broder with one of his Orthopedic Residents utilizing the model arm.</p>
+    <img src="../images/distal/BroderTestWResidents.jpeg" alt="Broder Testing With Residents" width="350" style="border-radius: 10px;">
+    <p style="text-align: center; width: 350px;">Image of Dr. Josh Broder with one of his Orthopedic Residents utilizing the model arm.</p>
   </div>
 </div>
 
