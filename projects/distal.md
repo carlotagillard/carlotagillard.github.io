@@ -11,12 +11,12 @@ title: Distal Forearm Fracture Model
 - Existing orthopedic training models are often fragile, expensive, and lack the anatomical realism necessary for effective surgical residency training.
 - We were tasked by Dr. Josh Border (Orthopedic Surgeon) and David Mercer (Product Engineer) to advance an early-stage prototype into a functional, anatomically accurate, and cost-effective training device for the Duke University Hospital.
 
-## The Tech
+## The Technology and Tools Used
 
 - Utilized a rigorous design thinking process to iterate through multiple versions in Onshape, evolving the device from a simple one-step mechanism into a complex "guided maze" that mimics the resistance of a real reduction.
 - Conducted comparative testing on various 3D-printing materials to achieve a balance between the durability required for repeated clinical use and the low production costs necessary for hospital scalability.
 
-## The Work & Results
+## The Work Put In
 <div style="display: flex; align-items: center; gap: 30px;">
   <div style="display: flex; flex-direction: column; gap: 15px;">
     <img src="../images/distal/TeamPicture.png" alt="Team Picture" width="350" style="border-radius: 10px;">
@@ -44,7 +44,7 @@ title: Distal Forearm Fracture Model
   </div>
 </div>
 
-## Resources
+## Additonal Resources
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
   <a href="https://cad.onshape.com/documents/eb6e289ed05d07266b6ba426/w/ca134d3ec821955ecd2be735/e/05d6ec63819e9a8e71cf58d3" 
