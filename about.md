@@ -33,7 +33,7 @@ Attened through Dual Enrollment
 
 - **Programming:** C++, Python, and Java
 - **Hardware:** PCB Design in KiCad, Arduino, MATLAB, and GitHub
-- **Design:** OnShape CAD, 3D Printing, and Rapid Prototyping
+- **Design:** OnShape CAD, 3D Printing, Laser Cutting & Engraving, and Rapid Prototyping
 - **Languages:** English, Spanish, and French
 - **BioStatistics:** ANOVA, Power Analysis, and Hypothesis Testing
 
