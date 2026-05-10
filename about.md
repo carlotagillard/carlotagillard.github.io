@@ -3,22 +3,21 @@ layout: default
 title: About Me
 ---
 
+## Who I Am
+
 <div style="display: flex; align-items: center; gap: 30px;">
   <img src="../images/profile.jpg" alt="Carlota Gillard" width="250" style="border-radius: 10px;">
   <p>
+    Carlota was born in Spain, to a Spanish mother and Belgian father. When she was 6 years old, she moved to Miami. Surrounded by ...
     A few sentences about yourself — where you're from (Spain, Belgium, Miami!), what drives you, 
     your personality beyond just academics.
   </p>
 </div>
 
-## Who I Am
-
-A few sentences about yourself — where you're from (Spain, Belgium, Miami!), what drives you, your personality beyond just academics.
-
 ## Education
 
 **Duke University — Pratt School of Engineering, Class of 2028**  
-B.S. Biomedical Engineering & B.A. Computer Science  
+*B.S. Biomedical Engineering & B.A. Computer Science* 
 Relevant coursework: Quantitative Physiology with Biostatistical Applications, Medtech Prototyping Skills, Algorithms and Data
 Structures, Modeling Cellular and Molecular Systems, and Mechanics of Solids
 
