@@ -8,13 +8,13 @@ title: Technical Explorations & Skill-Building
 <div style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
   
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../images/6YO/6YOLoadCell_Instructions.png" alt="Instructions" width="600" style="border-radius: 10px;">
-    <p style="text-align: center; width: 500px; margin-top: 10px;">2D CAD Drawing Provided to us as a guide.</p>
+    <img src="../images/6YO/6YOLoadCell_Instructions.png" alt="Instructions" width="600" style="border-radius: 5px;">
+    <p style="text-align: center; width: 500px; margin-top: 5px;">2D CAD Drawing Provided to us as a guide.</p>
   </div>
   
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../images/6YO/LoadCellCarlota.jpeg" alt="My Load Cell Drawing" width="500" style="border-radius: 10px;">
-    <p style="text-align: center; width: 500px; margin-top: 10px;">2D Drawing of my replica of the Load Cell.</p>
+    <img src="../images/6YO/LoadCellCarlota.jpeg" alt="My Load Cell Drawing" width="500" style="border-radius: 5px;">
+    <p style="text-align: center; width: 500px; margin-top: 5px;">2D Drawing of my replica of the Load Cell.</p>
   </div>
 
 </div>
@@ -34,9 +34,11 @@ The objective was to take a complex, multi-view 2D engineering drawings and accu
   </a>
 </div>
 
-## Lazer Printing
-- OnShape CAD
-- 3D Printing
+## Acrylic Phone Stand and Cardboard Box Laser-Cut
+
+Used Adobe Illustrator to create and design both a phone stand out of acrylic and a cardboard box, wich were then cut out and engraved using a lazer cutter. An acryic bender was also used on the phone stand.
+
+🔗 [Adobe Illustrator Files](https://github.com/carlotagillard/images/laser)
 
 ## Key Chains
 More detail here than on the homepage — what was your role, what problems did you solve, what did you learn?
