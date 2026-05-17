@@ -40,8 +40,24 @@ Used Adobe Illustrator to create and design both a phone stand out of acrylic an
 
 🔗 [Adobe Illustrator Files](https://github.com/carlotagillard/images/laser)
 
-## Key Chains
-More detail here than on the homepage — what was your role, what problems did you solve, what did you learn?
+## 3D printed Key-Chain and Pen/Desk Organizer
+
+
+STILL NEEED TO EDIT THISSS!!!!
+
+
+<div style="display: flex; justify-content: center; gap: 30px;">
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <img src="../images/distal/Testing at Hospital.jpeg" alt="Key Chains" width="350" style="border-radius: 10px;">
+    <p style="text-align: center; width: 350px;">First learned how to use OnShape by a small charm for my key chain.</p>
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <img src="../images/distal/BroderTestWResidents.jpeg" alt="Pen Organizer" width="350" style="border-radius: 10px;">
+    <p style="text-align: center; width: 350px;">Image of the Pen Organizer I design using Solid Works (my first CAD project).</p>
+  </div>
+</div>
+
+## Mold
 
 ---
 
