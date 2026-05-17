@@ -7,11 +7,11 @@ title: Technical Explorations & Skill-Building
 
 <div style="display: flex; justify-content: center; gap: 30px;">
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../images/6YO/6YOLoadCell_Instructions.png" alt="Instructions" width="400" style="border-radius: 10px;">
+    <img src="../images/6YO/6YOLoadCell_Instructions.png" alt="Instructions" width="500" style="border-radius: 10px;">
     <p style="text-align: center; width: 350px;">2D Cad Drawing Provided to us as a guide.</p>
   </div>
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../images/6YO/LoadCellCarlota.jpeg" alt="My Load Cell Drawing" width="350" style="border-radius: 10px;">
+  <div style="display: flex; align-items: center;">
+    <img src="../images/6YO/LoadCellCarlota.jpeg" alt="My Load Cell Drawing" width="500" style="border-radius: 10px;">
     <p style="text-align: center; width: 350px;">2D Drawing of my replica of the Load Cell.</p>
   </div>
 </div>
