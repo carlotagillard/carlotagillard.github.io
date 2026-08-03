@@ -81,3 +81,43 @@ a { color: var(--accent); }
   background-color: var(--accent-light);
   color: #ffffff;
 }
+
+.figure-center {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2.5rem;
+}
+
+.figure-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 2rem 0;
+}
+
+.figure-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.figure-center img,
+.figure-row img,
+.figure-stack img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.figure-row figure {
+  margin: 0;
+  max-width: 350px;
+}
+
+.figure-row figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5a6570;
+  margin-top: 0.5rem;
+}
