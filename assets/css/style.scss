@@ -4,6 +4,10 @@
 
 @import "{{ site.theme }}";
 
+.main-content h1 {
+  color: #0e6b8f;
+}
+
 :root {
   --ink: #14202a;
   --accent: #0e6b8f;
