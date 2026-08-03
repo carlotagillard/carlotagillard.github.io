@@ -8,7 +8,7 @@ title: Autonomous Robotics & Integrated Design Challenge
   .project-tagline { display: none; }
 </style>
 
-<img src="/images/IDC/IDC_top.png" alt="test" width="600">
+<img src="/images/IDC/IDC_top.png" alt="test" width="400">
 
 **Tools:** C++, Arduino, QTI line sensors, RFID, XBee, serial LCD
 
