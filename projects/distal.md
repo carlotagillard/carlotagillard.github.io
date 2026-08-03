@@ -22,7 +22,7 @@ title: Distal Forearm Fracture Model
 <div class="figure-row">
   <div class="figure-stack">
     <img src="/images/distal/final-vertical-fractured.jpg" alt="The final model in its fractured state" width="350">
-    <img src="/images/distal/team-picture.png" alt="The four-person design team" width="350">
+    <img src="/images/distal/TeamPicture.png" alt="The four-person design team" width="350">
   </div>
   <ul>
     <li>Acted as the lead designer, translating surgical requirements from Dr. Broder into a functional training device for residents.</li>
@@ -36,11 +36,11 @@ title: Distal Forearm Fracture Model
 
 <div class="figure-row">
   <figure>
-    <img src="/images/distal/testing-at-hospital.jpeg" alt="Emergency physicians reducing the model" width="350">
+    <img src="/images/distal/Testing at Hospital.jpeg" alt="Emergency physicians reducing the model" width="350">
     <figcaption>ER physicians attempting a reduction on the model.</figcaption>
   </figure>
   <figure>
-    <img src="/images/distal/broder-test-with-residents.jpeg" alt="Dr. Broder and a resident using the model" width="350">
+    <img src="/images/distal/BroderTestWResidents.jpeg" alt="Dr. Broder and a resident using the model" width="350">
     <figcaption>Dr. Broder with an orthopedic resident using the model arm.</figcaption>
   </figure>
 </div>
