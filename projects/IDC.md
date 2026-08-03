@@ -3,6 +3,11 @@ layout: default
 title: Autonomous Robotics & Integrated Design Challenge
 ---
 
+<style>
+  .project-name { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  .project-tagline { display: none; }
+</style>
+
 **Tools:** C++, Arduino, QTI line sensors, RFID, XBee, serial LCD
 
 ## Overview
@@ -120,3 +125,7 @@ rather than derived, that is a good story.]
   <a href="[[link]](https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/IDC)" target="_blank" class="resource-link">All Photos</a>
   <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/IDC/IDC_v4.0_xBee_LCD.ino" target="_blank" class="resource-link">Source Code</a>
 </div>
+
+---
+
+[← Back to Home](../index.md)
