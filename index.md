@@ -3,9 +3,7 @@ layout: default
 title: Carlota Gillard Portfolio
 ---
 
-# Hi, I'm Carlota 👋
-
-I am a Biomedical Engineering and Computer Science student at Duke University focusing on medical device innovation and embedded systems.
+I design and prototype medical devices, from CAD and 3D printing through firmware and custom PCBs. With a focus on medical device innovation and embedded systems.
 
 ---
 
