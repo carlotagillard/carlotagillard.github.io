@@ -8,6 +8,13 @@ title: Autonomous Robotics & Integrated Design Challenge
   .project-tagline { display: none; }
 </style>
 
+<div class="figure-center">
+  <figure>
+    <img src="/images/IDC/IDC_top.JPG" alt="The completed robot on the course" width="600">
+    <figcaption>The finished bot, with QTI sensors mounted at the front and the XBee radio on top.</figcaption>
+  </figure>
+</div>
+
 **Tools:** C++, Arduino, QTI line sensors, RFID, XBee, serial LCD
 
 ## Overview
@@ -32,7 +39,14 @@ The robot runs a C++ state machine. Every transition is triggered by sensor inpu
 rather than elapsed time, so a slow trial degrades gracefully instead of
 desynchronising.
 
-![State machine](/images/idc/state-machine.svg)
+<div class="figure-center">
+  <figure>
+    <a href="/images/IDC/IDC_StateMachine_Full.jpeg" target="_blank">
+      <img src="/images/IDC/IDC_StateMachine_Partial.jpeg" alt="State machine diagram showing line following, hashmark handling, and the wireless result-sharing phase" width="700">
+    </a>
+    <figcaption>Simplified control flow. Click for the full state diagram.</figcaption>
+  </figure>
+</div>
 
 Three QTI sensors read the surface beneath the robot. Each reading is thresholded
 and collapsed to one bit, and the three bits combine into a single integer:
@@ -120,12 +134,9 @@ rather than derived, that is a good story.]
 ## Additional Resources
 
 <div class="button-row">
-  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/IDC/IDC_StateMachine_Full.jpeg" target="_blank" class="resource-link">Detailed State Machine</a>
   <a href="https://drive.google.com/file/d/1LtZbab9C3GHFc-kH8qjYp9a1_5a5_3Sb/view?usp=sharing" target="_blank" class="resource-link">Challenge Completion Video</a>
-  <a href="[[link]](https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/IDC)" target="_blank" class="resource-link">All Photos</a>
-  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/IDC/IDC_v4.0_xBee_LCD.ino" target="_blank" class="resource-link">Source Code</a>
+  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/IDC" target="_blank" class="resource-link">All Photos</a>
+  <a href="https://github.com/carlotagillard/carlotagillard.github.io/blob/main/images/IDC/IDC_v4.0_xBee_LCD.ino" target="_blank" class="resource-link">Source Code</a>
 </div>
 
----
-
-[← Back to Home](../index.md)
+[← Back to Home](/)
