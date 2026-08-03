@@ -8,12 +8,7 @@ title: Autonomous Robotics & Integrated Design Challenge
   .project-tagline { display: none; }
 </style>
 
-<div class="figure-center">
-  <figure>
-    <img src="/images/IDC/IDC_top.png" alt="The completed robot on the course" width="600">
-    <figcaption>The finished bot, with QTI sensors mounted at the front and the XBee radio on top.</figcaption>
-  </figure>
-</div>
+<img src="/images/IDC/IDC_top.png" alt="test" width="600">
 
 **Tools:** C++, Arduino, QTI line sensors, RFID, XBee, serial LCD
 
