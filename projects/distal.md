@@ -44,29 +44,13 @@ title: Distal Forearm Fracture Model
   </div>
 </div>
 
-## Additonal Resources
+## Additional Resources
 
-<div style="display: flex; gap: 10px; margin-top: 10px;">
-  <a href="https://cad.onshape.com/documents/eb6e289ed05d07266b6ba426/w/ca134d3ec821955ecd2be735/e/05d6ec63819e9a8e71cf58d3" 
-     target="_blank"
-     style="background-color: #159957; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center;">
-    📐 View OnShape Model
-  </a>
-  <a href="https://youtu.be/4MaEyghUxlk" 
-     target="_blank"
-     style="background-color: #159957; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center;">
-    ▶️ Watch Prototype Video
-  </a>
-  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/distal" 
-   target="_blank"
-   style="background-color: #159957; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center;">
-  📁 View All Photos
-  </a>
-  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/PosterFinal.PDF" 
-   target="_blank"
-   style="background-color: #159957; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center;">
-  📜 View Final Poster
-  </a>
+<div class="button-row">
+  <a href="https://cad.onshape.com/documents/eb6e289ed05d07266b6ba426/w/ca134d3ec821955ecd2be735/e/05d6ec63819e9a8e71cf58d3" target="_blank" class="btn">📐 View OnShape Model</a>
+  <a href="https://youtu.be/4MaEyghUxlk" target="_blank" class="btn">▶️ Watch Prototype Video</a>
+  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/distal" target="_blank" class="btn">📁 View All Photos</a>
+  <a href="/PosterFinal.pdf" target="_blank" class="btn">📜 View Final Poster</a>
 </div>
 
 ---
