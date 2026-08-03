@@ -10,7 +10,7 @@ title: Autonomous Robotics & Integrated Design Challenge
 
 <div class="figure-center">
   <figure>
-    <img src="/images/IDC/IDC_top.JPG" alt="The completed robot on the course" width="600">
+    <img src="/images/IDC/IDC_top.png" alt="The completed robot on the course" width="600">
     <figcaption>The finished bot, with QTI sensors mounted at the front and the XBee radio on top.</figcaption>
   </figure>
 </div>
