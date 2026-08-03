@@ -47,10 +47,10 @@ title: Distal Forearm Fracture Model
 ## Additional Resources
 
 <div class="button-row">
-  <a href="https://cad.onshape.com/documents/eb6e289ed05d07266b6ba426/w/ca134d3ec821955ecd2be735/e/05d6ec63819e9a8e71cf58d3" target="_blank" class="btn">📐 View OnShape Model</a>
-  <a href="https://youtu.be/4MaEyghUxlk" target="_blank" class="btn">▶️ Watch Prototype Video</a>
-  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/distal" target="_blank" class="btn">📁 View All Photos</a>
-  <a href="/PosterFinal.pdf" target="_blank" class="btn">📜 View Final Poster</a>
+  <a href="https://cad.onshape.com/documents/eb6e289ed05d07266b6ba426/w/ca134d3ec821955ecd2be735/e/05d6ec63819e9a8e71cf58d3" target="_blank" class="resource-link">OnShape Model</a>
+  <a href="https://youtu.be/4MaEyghUxlk" target="_blank" class="resource-link">Prototype Video</a>
+  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/distal" target="_blank" class="resource-link">All Photos</a>
+  <a href="/PosterFinal.pdf" target="_blank" class="resource-link">Final Poster</a>
 </div>
 
 ---
