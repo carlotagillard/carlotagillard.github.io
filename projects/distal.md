@@ -3,6 +3,11 @@ layout: default
 title: Distal Forearm Fracture Model
 ---
 
+<style>
+  .project-name { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  .project-tagline { display: none; }
+</style>
+
 <div class="figure-center">
   <a href="/PosterFinal.pdf" target="_blank">
     <img src="/images/distal/final-poster.png" alt="Final project poster" width="700">
@@ -21,7 +26,7 @@ title: Distal Forearm Fracture Model
 
 <div class="figure-row">
   <div class="figure-stack">
-    <img src="/images/distal/final-vertical-fractured.jpg" alt="The final model in its fractured state" width="350">
+    <img src="/images/distal/final vertical fractured.jpg" alt="The final model in its fractured state" width="350">
     <img src="/images/distal/TeamPicture.png" alt="The four-person design team" width="350">
   </div>
   <ul>
@@ -31,7 +36,7 @@ title: Distal Forearm Fracture Model
 </div>
 
 ## Results & Testing
-- Ran a series of tests at Duke Hospital with emergency physicians, with Dr. Broder and his residents, and with our own peers, confirming both anatomical accuracy and durability.
+- Ran a series of tests at Duke Hospital with emergency physicians, with Broder and his residents, and with our own peers, confirming both anatomical accuracy and durability.
 - Transformed a prototype that offered little guidance into an anatomically accurate model that guides a resident through the force and trajectory a successful fracture reduction requires.
 
 <div class="figure-row">
@@ -40,8 +45,8 @@ title: Distal Forearm Fracture Model
     <figcaption>ER physicians attempting a reduction on the model.</figcaption>
   </figure>
   <figure>
-    <img src="/images/distal/BroderTestWResidents.jpeg" alt="Dr. Broder and a resident using the model" width="350">
-    <figcaption>Dr. Broder with an orthopedic resident using the model arm.</figcaption>
+    <img src="/images/distal/BroderTestWResidents.jpeg" alt="Broder and a resident using the model" width="350">
+    <figcaption>Broder with an orthopedic resident using the model arm.</figcaption>
   </figure>
 </div>
 
