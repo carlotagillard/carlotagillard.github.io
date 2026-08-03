@@ -121,3 +121,15 @@ a { color: var(--accent); }
   color: #5a6570;
   margin-top: 0.5rem;
 }
+
+.figure-center figure {
+  margin: 0;
+  max-width: 100%;
+}
+
+.figure-center figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5a6570;
+  margin-top: 0.5rem;
+}
