@@ -3,7 +3,7 @@ layout: default
 title: Carlota Gillard Portfolio
 ---
 
-I design and prototype medical devices, from CAD and 3D printing through firmware and custom PCBs. With a focus on medical device innovation and embedded systems.
+Fascinated by the mechanics of the body and the precision of architecture, I have bent both interests into one: medical device innovation and embedded systems, built with CAD, 3D printing, firmware, and custom PCBs.
 
 ---
 
