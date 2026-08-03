@@ -14,25 +14,20 @@ title: Autonomous Robotics & Integrated Design Challenge
 
 ## Overview
 
-A five-robot team where each bot had to navigate a course autonomously, read RFID
-tags at fixed waypoints, and then coordinate wirelessly to assemble a shared
-result. I owned sensor integration and the communication layer.
+Our three-person team built one of five autonomous robots for a multi-bot collaborative course. Each robot had to autonomously navigate a black-line track, stop at hashmarks, handle onboard sensor triggers (our group used RFID), and coordinate wirelessly via XBee to assemble and display a shared result.
 
-The course runs along a black line marked by seven crossbars. At the first five,
-the robot stops and checks for an RFID card; whichever crossbar has one becomes
-that bot's position value. After the sixth crossbar the line ends, and the robot
-has to cross open floor on dead reckoning to reach the final segment. At the
-seventh it stops for good and switches from driving to communicating.
+The course runs along a black line marked by seven hashmarks:
+- Hashmarks 1–5: The robot stops, flashes a unique onboard RGB LED color for each crossbar, and polls the RFID reader. An external LED lights up green if an RFID card is present or red if absent.
+- Hashmark 6: The line ends, and the robot crosses open floor using dead reckoning to reach the final segment.
+- Hashmark 7: The robot stops for good and switches from driving to communicating.
 
-[Two sentences on what made it hard. The dead-reckoning gap and five radios on one
-channel are both worth naming. If the course had a specific turn radius or timing
-budget that shaped your tuning, say so.]
+Navigating this course was exceptionally difficult due to two major hurdles:
+- Precision Sensor Placement: Getting the onboard LEDs to flash correctly when identifying RFID tags required strict mechanical calibration. Because the RFID sensor has a wide detection range, positioning it too far forward caused it to trigger prematurely on the wrong or previous hashmark, requiring us to place the sensor precisely parallel to the back half of the bot.
+- Wireless Collision and Timing Bottlenecks: Managing five XBee radios on a single channel created severe congestion. Because our bot finished last in the sequence, the faster leading bots would often receive all prior data, calculate the total, and trigger the final show before our messages could fully propagate—leaving us bombarded with rapid incoming data and highly susceptible to dropped packets.
 
 ## System architecture
 
-The robot runs a C++ state machine. Every transition is triggered by sensor input
-rather than elapsed time, so a slow trial degrades gracefully instead of
-desynchronising.
+The robot runs a deterministic C++ state machine where every transition is triggered by sensor input rather than elapsed time, ensuring that a slow trial degrades gracefully instead of desynchronising.
 
 <div class="figure-center">
   <figure>
@@ -43,41 +38,23 @@ desynchronising.
   </figure>
 </div>
 
-Three QTI sensors read the surface beneath the robot. Each reading is thresholded
-and collapsed to one bit, and the three bits combine into a single integer:
+QTI line sensors: Three sensors (left, centre, right) measured RC discharge time in microseconds (anything under 400 microseconds counted as white). We tuned this threshold directly against the lighting on our course.
+
+State calculation: Readings were thresholded and collapsed into a single integer state:
 
     state = 4·(left) + 2·(centre) + 1·(right)
 
-Eight possible states from one line of arithmetic. State 5, white-black-white,
-means centred, so drive straight. States 1 and 3 mean the robot has drifted right,
-so nudge left; 4 and 6 mean the opposite. State 0, all three black, is a crossbar.
-State 7, all three white, means the line has ended.
+- State 5 (White-Black-White): Centred, drive straight.
+- States 1 & 3: Drifted right, nudge left.
+- States 4 & 6: Drifted left, nudge right.
+- State 0 (All black): Crossbar detected.
+- State 7 (All white): Line ended.
 
-The crossbar handler branches on a running count rather than on sensor input,
-because each of the seven crossbars means something different: five scan points,
-one departure point, one finish.
+Steering: Corrections were kept intentionally small. Turn commands sat at 1475 and 1525 microseconds against a 1500-microsecond neutral, preventing oscillation across the line.
 
-### Sensing
+RFID: At the first five crossbars, the robot stopped, flashed a unique onboard RGB LED colour, and polled the RFID reader. A card present set 'position' to that crossbar number and blinked the external LED green; no card blinked it red—providing instant visual feedback across the room. That two-color feedback made it possible to tell from across the room whether a scan had succeeded, which mattered during testing.
 
-**QTI line sensors.** Three sensors mounted left, centre and right. Each one is
-read by charging the pin high, flipping it to input, and timing the decay in
-microseconds, which is the standard RC discharge measurement. Anything under 400
-microseconds counts as white. [Say whether you took 400 from the lab manual or
-tuned it against the lighting on your course. If you tuned it, that is the most
-interesting sentence in this section.]
-
-Steering corrections are deliberately small: the turn commands sit at 1475 and
-1525 microseconds against a 1500 microsecond neutral, so the robot converges back
-onto the line rather than oscillating across it.
-
-**RFID.** At each of the first five crossbars the robot stops, flashes a colour
-unique to that crossbar on its onboard RGB LED, and polls the RFID reader. A card
-present sets `position` to the current crossbar number and blinks the external LED
-green; no card blinks it red. That two-colour feedback made it possible to tell
-from across the room whether a scan had succeeded, which mattered during testing.
-
-[What was actually encoded on the tags, and why only one of the five crossbars had
-a card for any given bot.]
+Data encoding: Each tag encoded specific positional data, designed so that only one of the five crossbars held a card for any given bot.
 
 ### Wireless coordination
 
@@ -85,46 +62,23 @@ Each bot encodes its identity and its result into a single byte: `group × 10 + 
 position`. The receiving bot inverts it with integer division and modulo to recover
 which group sent the message and what they found.
 
-That encoding is why the whole exchange fits in one byte per message, which matters
-when five radios share a channel. There is no addressing and no acknowledgement.
-Instead every bot rebroadcasts its own value roughly once every hundred passes
-through the receive loop, and keeps rebroadcasting until its local `results` array
-is complete. A dropped message simply gets sent again a moment later, so the
-protocol converges without any retry logic.
+With five radios on one shared channel, there was no addressing and no acknowledgements. Instead, bots rebroadcasted their value once every 100 receive loops until their local results array was complete. A dropped message simply gets sent again a moment later, so the protocol converges without any retry logic.
 
-The array starts as five values of -1. Each incoming message fills one slot, and
-the LCD redraws the full array plus the running sum every time a new value arrives.
-Two reserved bytes, 36 and 37, trigger a synchronised song and light show once the
-whole team has finished.
+Incoming messages filled a 5-slot results array, updating the LCD with the running sum and full array every time a new value arrived. Two reserved bytes (36 and 37) triggered a synchronized song and light show once the team finished
 
-## Testing and results
+## Testing and Results
 
-I validated performance across five consecutive trials, measuring timing precision
-and sensor accuracy.
+The robot completed the course successfully: it followed the line through all seven crossbars, crossed the dead-reckoning gap, read its RFID tag, and stopped at the finish. On the final display, one or two of the five values were still showing -1, meaning we never received those bots' broadcasts before the run ended.
 
-[The numbers. Completion rate out of five, run time and how much it varied, how
-often the RFID read succeeded on the first stop, how long the array took to fill
-once all bots reached the end. Even rough figures beat none.]
+That gap points at the communication layer rather than the navigation. Because there is no acknowledgement in the protocol, a bot has no way to know whether its message was heard, and a receiver has no way to request a resend. Every bot rebroadcasts on a loop, so given more time the array would likely have filled, but "given more time" is not a design. With acknowledgements, or with staggered transmit intervals so five radios stop talking over each other, those slots would have filled deterministically.
 
 ## What I would do differently
 
 Two things stand out in the code.
 
-The state machine handles seven of its eight possible states. State 2,
-black-white-black, has no case, which means the robot straddling the line with only
-the outer sensors on it would issue no motor command at all. It never came up on
-our course geometry, but an unhandled state is an unhandled state, and I would
-either give it a recovery behaviour or assert on it.
+The state machine handles seven of its eight possible states. State 2, black-white-black, has no case, which means the robot straddling the line with only the outer sensors on it would issue no motor command at all. It never came up on our course geometry, but an unhandled state is an unhandled state, and I would either give it a recovery behaviour or assert on it.
 
-The five crossbar cases are near-identical copies of each other, differing only in
-the flash colour and the position value. There is also a duplicate `else if` branch
-testing the same condition as the `if` above it, so it can never execute. Both would
-collapse into one parameterised function taking colour and index, which would have
-made the RFID logic easier to change when we were tuning it.
-
-[Optional third: a bug that cost you real time. The 35 second hold at crossbar 5 is
-clearly a synchronisation point, so if that number was found by trial and error
-rather than derived, that is a good story.]
+The five crossbar cases are near-identical copies of each other, differing only in the flash color and the position value. There is also a duplicate `else if` branch testing the same condition as the `if` above it, so it can never execute. Both would collapse into one parameterized function taking color and index, which would have made the RFID logic easier to change when we were tuning it.
 
 ## Additional Resources
 
