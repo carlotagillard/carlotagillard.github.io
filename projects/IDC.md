@@ -3,9 +3,6 @@ layout: default
 title: Autonomous Robotics & Integrated Design Challenge
 ---
 
-# Autonomous Robotics & Integrated Design Challenge
-
-**Systems Integration Engineer** · Duke University, ECE 110L · Jan 2026 to May 2026  
 **Tools:** C++, Arduino, QTI line sensors, RFID, XBee, serial LCD
 
 ## Overview
@@ -118,8 +115,8 @@ rather than derived, that is a good story.]
 ## Additional Resources
 
 <div class="button-row">
-  <a href="[link]" target="_blank" class="resource-link">Detailed State Machine</a>
-  <a href="[link]" target="_blank" class="resource-link">Challenge Completion Video</a>
-  <a href="[link]" target="_blank" class="resource-link">All Photos</a>
-  <a href="[link]" target="_blank" class="resource-link">Source Code</a>
+  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/IDC/IDC_StateMachine_Full.jpeg" target="_blank" class="resource-link">Detailed State Machine</a>
+  <a href="https://drive.google.com/file/d/1LtZbab9C3GHFc-kH8qjYp9a1_5a5_3Sb/view?usp=sharing" target="_blank" class="resource-link">Challenge Completion Video</a>
+  <a href="[[link]](https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/IDC)" target="_blank" class="resource-link">All Photos</a>
+  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/IDC/IDC_v4.0_xBee_LCD.ino" target="_blank" class="resource-link">Source Code</a>
 </div>
