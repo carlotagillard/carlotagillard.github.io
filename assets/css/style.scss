@@ -1,16 +1,12 @@
 ---
 ---
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Source+Serif+4:opsz,wght@8..60,400&display=swap');
-
 @import "{{ site.theme }}";
-
-.main-content h2 {
-  color: #459AC4;
-}
 
 :root {
   --ink: #14202a;
   --accent: #2C6C8C;
+  --accent-light: #459AC4;
 }
 
 body {
@@ -27,6 +23,10 @@ h1, h2, h3 {
 
 a { color: var(--accent); }
 
+.main-content { max-width: 850px; }
+.main-content h2 { color: var(--accent-light); }
+.main-content h3 { color: var(--accent); }
+
 .page-header {
   background-image:
     linear-gradient(rgba(20, 32, 42, 0.6), rgba(20, 32, 42, 0.6)),
@@ -36,14 +36,33 @@ a { color: var(--accent); }
   padding: 5rem 1rem;
 }
 
-.main-content { max-width: 850px; }
-
 .project-name {
   font-size: clamp(2.25rem, 6vw, 4rem);
   line-height: 1.05;
   margin-bottom: 0.5rem;
 }
+
 .project-tagline {
   font-size: 1.35rem;
   opacity: 0.95;
 }
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.main-content .btn {
+  background-color: var(--accent);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.15s ease;
+}
+
+.main-content .btn:hover { background-color: var(--accent-light); }
