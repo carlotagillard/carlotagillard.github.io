@@ -133,3 +133,39 @@ a { color: var(--accent); }
   color: #5a6570;
   margin-top: 0.5rem;
 }
+
+.figure-side {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 2rem 0;
+}
+
+.figure-side > figure {
+  margin: 0;
+  flex: 0 0 300px;
+  max-width: 100%;
+}
+
+.figure-side > div {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.figure-side p:first-child {
+  margin-top: 0;
+}
+
+.figure-side img {
+  width: 100%;
+}
+
+.figure-center figcaption,
+.figure-row figcaption,
+.figure-side figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5a6570;
+  margin-top: 0.5rem;
+}
