@@ -4,6 +4,7 @@ title: Distal Forearm Fracture Model
 ---
 
 **Team:** C. Gillard, C. Hanby, A. He, R. Rohr
+
 **Tools:** OnShape, 3D printing, mechanical testing, Likert-scale user studies
 
 <style>
