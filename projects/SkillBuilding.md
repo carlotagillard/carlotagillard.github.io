@@ -3,6 +3,11 @@ layout: default
 title: Technical Explorations & Skill-Building
 ---
 
+<style>
+  .project-name { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  .project-tagline { display: none; }
+</style>
+
 ## On this page
 
 - [2D Blueprint to 3D CAD Reproduction](#2d-blueprint-to-3d-cad-reproduction)
