@@ -9,22 +9,25 @@ Fascinated by the mechanics of the body and the precision of architecture, I hav
 
 ## Featured Projects
 
-**[Autonomous Robotics & Integrated Design](projects/IDC.md)**
-*   **Tech:** Arduino, Multi-sensor Integration (QTI, RFID), XBee Wireless Protocols
-*   Engineered a robot for complex path navigation within a five-bot team. Integrated wireless protocols to transmit real-time data and validated performance through consecutive trials.
+### [Autonomous Robotics & Integrated Design](/projects/IDC.html)
+A C++ state machine driving line following, RFID waypoints, and XBee coordination across a five-robot team. Completed the full course; the wireless layer is where it fell short, and why. 
+*Arduino · QTI sensors · RFID · XBee*
 
-**[Integrated Embedded System](projects/lightbox.md)** 
-*   **Tech:** C++, PCB Design, KiCad
-*   Developed firmware for real-time sensor processing and designed custom PCBs for system integration.
+### [Integrated Embedded System](/projects/lightbox.html)
+Firmware, a custom KiCad PCB, and a 3D-printed enclosure in one battery-powered device. Three LEDs on independent timers with a heartbeat holding 1 Hz to within 0.5%, characterized against spec with measured data.
+*C++ · KiCad · OnShape · PlatformIO*
 
-**[Distal Forearm Fracture Model](projects/distal.md)**
-*   **Tech:** OnShape CAD, 3D Printing
-*   Designed a 3D-printed training device used for orthopedic resident education.
+### [Distal Forearm Fracture Model](/projects/distal.html)
+A training device for orthopedic residents, built around a guided maze that enforces the reduction motion rather than just the endpoint. Eight physicians rated the mechanism 8.3 out of 10.
+*OnShape · 3D printing · user testing*
 
-**[Technical Explorations & Skill-Building](projects/SkillBuilding.md)**
-*   **CAD Reproduction (Cervical Spine Model):** Replicated a professional CAD drawing of a cervical neck structure to refine precision modeling and blueprint interpretation skills.
-*   **Laser Cutting & Engraving:** Learned the fundamentals of laser printing and vector-based design through the creation of custom-etched components.
+### [Sleep Study Signal Analysis](/projects/sleep.html)
+Python analysis of four physiological signals, ECG, blood pressure, respiration, and oxygen saturation, detecting apnea and hypoxia events and generating a diagnostic report. I owned the oxygen saturation module.
+*Python · SciPy · NumPy · matplotlib*
 
+### [Technical Explorations](/projects/skillbuilding.html)
+Smaller projects and exercises that do not warrant their own page: things I built to learn a tool, practice a technique, or test an idea.
+*OnShape · laser cutting · vector design · mold making · Solid Works · Fusion360 · Java*
 ---
 
 ## About Me
