@@ -112,7 +112,15 @@ a { color: var(--accent); }
 
 .figure-row figure {
   margin: 0;
+  flex: 1 1 0;
+  min-width: 240px;
   max-width: 350px;
+}
+
+.figure-row img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 .figure-row figcaption {
