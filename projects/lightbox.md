@@ -35,8 +35,10 @@ I designed the schematic and PCB in KiCad. Each output LED is driven by a digita
 
 <div class="figure-row">
   <figure>
-    <img src="/images/lightbox/SCHEMATIC.png" alt="KiCad schematic" width="350">
-    <figcaption>Schematic.</figcaption>
+    <a href="/images/lightbox/SCHEMATIC.png" target="_blank">
+      <img src="/images/lightbox/SCHEMATIC.png" alt="KiCad schematic" width="350">
+    </a>
+    <figcaption>Schematic (Click to enlarge).</figcaption>
   </figure>
   <figure>
     <img src="/images/lightbox/PCB-LAYOUT.png" alt="KiCad PCB layout" width="350">
@@ -58,10 +60,7 @@ The firmware runs a state machine with interrupt-driven event handling, built in
 
 <div class="figure-side">
   <figure>
-    <a href="/images/lightbox/STATE-MACHINE.png" target="_blank">
-      <img src="/images/lightbox/STATE-MACHINE.png" alt="State machine diagram showing IDLE, READ_ADC, CALC_ON_TIME, and the two-phase TOGGLE_LED output sequence">
-    </a>
-    <figcaption>Click to enlarge.</figcaption>
+    <img src="/images/lightbox/STATE-MACHINE.png" alt="State machine diagram showing IDLE, READ_ADC, CALC_ON_TIME, and the two-phase TOGGLE_LED output sequence">
   </figure>
   <div markdown="1">
 
