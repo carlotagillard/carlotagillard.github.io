@@ -25,7 +25,7 @@ A training device for orthopedic residents, built around a guided maze that enfo
 Python analysis of four physiological signals, ECG, blood pressure, respiration, and oxygen saturation, detecting apnea and hypoxia events and generating a diagnostic report. I owned the oxygen saturation module.<br>
 *Python · SciPy · NumPy · matplotlib*
 
-### [Skill Building](/projects/skillbuilding.md)
+### [Skill Building](/projects/SkillBuilding.md)
 Smaller projects and exercises that do not warrant their own page: things I built to learn a tool, practice a technique, or test an idea. <br>
 *OnShape · laser cutting · vector design · mold making · SolidWorks · Fusion 360 · Java*
 
