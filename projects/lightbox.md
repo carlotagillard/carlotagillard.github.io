@@ -12,7 +12,7 @@ title: Integrated Embedded System
 
 <div class="figure-center">
   <figure>
-    <img src="https://drive.google.com/uc?export=view&id=1EK02X1EL5gW6oSZOgisoF45VfkexpWz6" alt="The finished enclosure with all three LEDs lit" width="600">
+    <img src="/images/lightbox/OutsideOn.jpg" alt="The finished enclosure with all three LEDs lit" width="600">
     <figcaption>The finished device: three LEDs under independent firmware control, with the heartbeat holding 1 Hz to within 0.5% while they run.</figcaption>
   </figure>
 </div>
@@ -96,7 +96,7 @@ I had assumed the PCB and battery could sit loose inside the shell. They could n
 
 <div class="figure-row">
   <figure>
-    <img src="/images/lightbox/INTERNALS.jpg" alt="PCB mounted on standoffs above the battery inside the enclosure" width="350">
+    <img src="/images/lightbox/InsidePCB.jpg" alt="PCB mounted on standoffs above the battery inside the enclosure" width="350">
     <figcaption>PCB mounted above the battery on threaded standoffs.</figcaption>
   </figure>
   <figure>
@@ -147,10 +147,10 @@ Two things I would change are already covered above: supplying the potentiometer
 ## Additional Resources
 
 <div class="button-row">
-  <a href="[link]" target="_blank" class="resource-link">Technical Report</a>
-  <a href="[link]" target="_blank" class="resource-link">KiCad Project</a>
-  <a href="[link]" target="_blank" class="resource-link">Source Code</a>
-  <a href="[link]" target="_blank" class="resource-link">Demo Video</a>
+  <a href="https://drive.google.com/file/d/1Oyo2Yig61s7r94PN0SATIG2fRzrDWWWT/view?usp=sharing" target="_blank" class="resource-link">Technical Report</a>
+  <a href="images/lightbox" target="_blank" class="resource-link">CAD Design and Other Images</a>
+  <a href="https://drive.google.com/file/d/1VgZQsWjYh7gtf-GQDh_f_wE7VAOO2NiW/view?usp=sharing" target="_blank" class="resource-link">Source Code</a>
+  <a href="https://drive.google.com/file/d/1HkEIZk3AFVnCUBC4BZb21UNOI9UsR4C_/view?usp=sharing" target="_blank" class="resource-link">Demo Video</a>
 </div>
 
 [← Back to Home](/)
