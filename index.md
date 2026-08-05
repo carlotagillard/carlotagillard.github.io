@@ -27,7 +27,7 @@ Python analysis of four physiological signals, ECG, blood pressure, respiration,
 
 ### [Technical Explorations](/projects/skillbuilding.html)
 Smaller projects and exercises that do not warrant their own page: things I built to learn a tool, practice a technique, or test an idea. <br>
-*OnShape · laser cutting · vector design · mold making · Solid Works · Fusion360 · Java*
+*OnShape · laser cutting · vector design · mold making · SolidWorks · Fusion 360 · Java*
 
 ---
 
