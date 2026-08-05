@@ -91,7 +91,7 @@ a { color: var(--accent); }
 .figure-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 30px;
   margin: 2rem 0;
