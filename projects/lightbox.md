@@ -27,11 +27,11 @@ The hardest part was not designing any single piece, it was debugging the assemb
 
 The first cause was in the firmware: I had misassigned pin macros, so the code was driving pins that were not connected to what I thought they were. The wiring itself was correct.
 
-The second cause was more instructive. After finally getting the third LED working, the other two stopped. I had spent hours re-checking every solder joint and re-reading the code before realizing that in the process of swapping cables to isolate the fault, I had reconnected two of them to the wrong sockets. Changing them back fixed it immediately.
+The second cause was a little more silly. After finally getting the third LED working, the other two stopped. I had spent hours re-checking every solder joint and re-reading the code before realizing that in the process of swapping cables to isolate the fault, I had reconnected two of them to the wrong sockets. Changing them back fixed it immediately.
 
 ## Circuit design
 
-I designed the schematic and PCB in KiCad. Each output LED is driven by a digital pin into an IRFZ44 MOSFET rather than directly from the microcontroller. A microcontroller pin is meant to carry a control signal, not to power a load: each I/O pin on the Nano Every can source only about 20 mA. The MOSFET separates those jobs, so the pin only has to charge the gate, which draws almost nothing, while the LED current comes from the regulated 5 V rail through a 1 kΩ series resistor. The same pattern shows up anywhere a microcontroller drives something bigger than itself, from motors to relays.
+I designed the schematic and PCB in KiCad. Each output LED is driven by a digital pin into an IRFZ44 MOSFET rather than directly from the microcontroller. A microcontroller pin is meant to carry a control signal, not to power a load: each I/O pin on the Nano Every can source only about 20 mA. The MOSFET separates those jobs, so the pin only has to charge the gate, which draws almost nothing, while the LED current comes from the regulated 5 V rail through a 1 kΩ series resistor.
 
 <div class="figure-row">
   <figure>
@@ -119,29 +119,28 @@ I characterised the device against its specification using measured data rather 
   </figure>
 </div>
 
-**Eye brightness against potentiometer voltage** is strongly linear: y = 16.19x + 19.42, R² = 0.99995, slope 95% CI [16.07, 16.31].
+**Eye brightness** tracks the potentiometer almost perfectly linearly: 
+y = 16.19x + 19.42, R² = 0.99995.
 
-**Heartbeat timing** held to specification in both states. Idle: mean 1.0021 Hz, SD 0.0024, 95% CI [1.00010, 1.00415]. During the output sequence: mean 1.0011 Hz, SD 0.00064, 95% CI [1.00059, 1.00166]. Both within 0.5% of the 1 Hz target, and the variance was actually lower while the eye PWM and logo blink were running, which confirms the non-blocking architecture: driving three outputs concurrently did not cost the heartbeat any timing accuracy.
+**Heartbeat timing** held within 0.5% of 1 Hz in both states. Idle: 1.0021 Hz, SD 0.0024. During the output sequence: 1.0011 Hz, SD 0.00064. The variance was actually lower while all three LEDs were running, which is the clearest evidence that the non-blocking architecture worked: driving three outputs at once cost the heartbeat nothing.
 
-### Two deviations, one cause
+Brightness spans 20% to 73% duty cycle and blink rate spans 5.0 to 7.5 Hz, compared to the target of 0 to 100% and 5 to 10 Hz.
 
-Measured brightness spans roughly 20% to 73% duty cycle, and blink rate spans 5.0 to 7.5 Hz. The specification asks for 0 to 100% and 5 to 10 Hz.
+The 20% lower brightness limit was intentional. Setting the minimum PWM to 50 avoids a dead zone where LEDs are invisible, matching the regression intercept of 19.42% (since $50/255 = 19.6\%$).
 
-The lower brightness bound is deliberate: I set `EYE_MIN_BRIGHTNESS` to a PWM value of 50 because below that the LEDs are effectively invisible, and a control whose bottom fifth does nothing is worse than a narrower one. That floor is visible directly in the regression intercept, since 50/255 is 19.6% and the fit gives 19.42%.
-
-Both upper bounds have the same cause, which I did not catch until analysing the data. The potentiometers are supplied from the 3.3 V rail while the ADC reference is VDD at 5 V, so full rotation only sweeps about two thirds of the ADC range and neither `map` call reaches its upper endpoint. 3.3/5 corresponds to roughly ADC 675, and `map(675, 0, 1023, 50, 255)` gives 185, or 72.5% duty cycle. I measured 72.8%. The fix is either supplying the potentiometers from 5 V or calling `analogReference(INTERNAL)` to match the reference to the actual input range.
+Both upper limits fall short for the same reason: the potentiometers run on a 3.3 V rail while the ADC uses a 5 V reference. This means a full turn only sweeps two-thirds of the range. This limits the duty cycle to a predicted 72.5% (I measured 72.8%). The fix is simply powering the potentiometers from the same rail as the ADC reference.
 
 ### The blink-rate curve
 
-Blink rate fits a line less well, R² = 0.98893, and the residuals curve systematically rather than scattering. That is not noise, it is the wrong model. The firmware maps the ADC linearly to a half period, and frequency is the reciprocal of period, so the true relationship is a hyperbola:
+Blink rate fits a line worse, R² = 0.98893, and the points curve away from the fit in a consistent direction rather than scattering. I originally attributed that to electrical noise; going back to the data, it is not noise at all. The firmware sets a blink *duration*, and frequency is one over duration, so the underlying relationship is a curve rather than a line:
 
     f = 50 / (10 − V)
 
-That model predicts every measured point within 0.03 Hz: 5.00 against 5.02 at 0 V, 5.88 against 5.90 at 1.5 V, 6.25 against 6.28 at 2.0 V, and 7.46 against 7.47 at 3.3 V. The apparent non-linearity is the firmware working exactly as written, and fitting a straight line to it was my error in analysis rather than a defect in the device.
+That model predicts every measured point within 0.03 Hz. The linear fit was what the assignment specified and it captures the trend well enough for the range in question, but the residuals are systematic rather than random, and the reciprocal model explains them exactly.
 
 ## What I would do differently
 
-Two things I would change are already covered above: supplying the potentiometers from the same rail as the ADC reference, and fitting the model the firmware actually implements rather than assuming linearity. The third is CAD discipline. Rescaling the figure mid-design cost me more hours than any electrical problem did, and the fix is simply to settle the overall size before dimensioning a single feature against it.
+The change I would actually make is to sample the potentiometers continuously rather than once per button press. As built, turning a knob mid-sequence does nothing until the next press, which is not how anyone expects a knob to behave. Reading the ADCs inside `TOGGLE_LED` instead of before it would let brightness and blink rate respond live, which is both more useful and more fun to demonstrate.
 
 ## Additional Resources
 
