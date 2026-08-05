@@ -48,7 +48,7 @@ Force comes from a tensioned wire pulling the rod in the opposite direction, so 
     <figcaption>The final model in its fractured state.</figcaption>
   </figure>
   <figure>
-    <img src="/images/distal/TeamPicture.png" alt="The four-person design team" width="350">
+    <img src="/images/distal/TeamPicture.jpg" alt="The four-person design team" width="350">
     <figcaption>The team.</figcaption>
   </figure>
 </div>
