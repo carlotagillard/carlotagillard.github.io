@@ -146,7 +146,7 @@ The change I would actually make is to sample the potentiometers continuously ra
 
 <div class="button-row">
   <a href="https://drive.google.com/file/d/1Oyo2Yig61s7r94PN0SATIG2fRzrDWWWT/view?usp=sharing" target="_blank" class="resource-link">Technical Report</a>
-  <a href="carlotagillard.github.io/images/lightbox" target="_blank" class="resource-link">CAD Design and Other Images</a>
+  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/images/lightbox" target="_blank" class="resource-link">CAD Design and Other Images</a>
   <a href="https://drive.google.com/file/d/1VgZQsWjYh7gtf-GQDh_f_wE7VAOO2NiW/view?usp=sharing" target="_blank" class="resource-link">Source Code</a>
   <a href="https://drive.google.com/file/d/1HkEIZk3AFVnCUBC4BZb21UNOI9UsR4C_/view?usp=sharing" target="_blank" class="resource-link">Demo Video</a>
 </div>
