@@ -12,7 +12,7 @@ title: Integrated Embedded System
 
 <div class="figure-center">
   <figure>
-    <img src="/images/lightbox/OutsideOn.jpg" alt="The finished enclosure with all three LEDs lit" width="600">
+    <img src="/images/lightbox/OutsideOn.png" alt="The finished enclosure with all three LEDs lit" width="600">
     <figcaption>The finished device: three LEDs under independent firmware control, with the heartbeat holding 1 Hz to within 0.5% while they run.</figcaption>
   </figure>
 </div>
