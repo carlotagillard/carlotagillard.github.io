@@ -3,62 +3,113 @@ layout: default
 title: Technical Explorations & Skill-Building
 ---
 
-## 2D Blueprint to 3D CAD Reconfiguration (6Yr Old)
+## On this page
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
-  
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../images/6YO/6YOLoadCell_Instructions.png" alt="Instructions" width="600" style="border-radius: 5px;">
-    <p style="text-align: center; width: 500px; margin-top: 5px;">2D CAD Drawing Provided to us as a guide.</p>
-  </div>
-  
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../images/6YO/LoadCellCarlota.jpeg" alt="My Load Cell Drawing" width="500" style="border-radius: 5px;">
-    <p style="text-align: center; width: 500px; margin-top: 5px;">2D Drawing of my replica of the Load Cell.</p>
-  </div>
+- [2D Blueprint to 3D CAD Reproduction](#2d-blueprint-to-3d-cad-reproduction)
+- [Laser-Cut Phone Stand and Box](#laser-cut-acrylic-phone-stand-and-cardboard-box)
+- [CAD to Cast Part](#cad-to-cast-part)
+- [First CAD Project: Pen and Desk Organizer](#first-cad-project-pen-and-desk-organizer)
 
+## 2D Blueprint to 3D CAD Reproduction
+
+**Tools:** OnShape
+
+<div class="figure-center">
+  <figure>
+    <img src="/images/6YO/load-cell-instructions.png" alt="Provided 2D engineering drawing of the load cell" width="600">
+    <figcaption>The 2D drawing provided as a guide.</figcaption>
+  </figure>
 </div>
 
-The objective was to take a complex, multi-view 2D engineering drawings and accurately replicate them as 3D models. The challenge lay in correctly interpreting intricate geometric tolerances, hidden views, and maintaining design intent so that any future dimensional changes would update seamlessly across the model.
-
-<div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; margin-bottom: 20px;">
-  <a href="https://cad.onshape.com/documents/eb6e289ed05d07266b6ba426/w/ca134d3ec821955ecd2be735/e/05d6ec63819e9a8e71cf58d3" 
-     target="_blank"
-     style="background-color: #159957; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center;">
-    📐 View OnShape Model
-  </a>
-  <a href="https://github.com/carlotagillard/carlotagillard.github.io/tree/main/Hybrid%20III%206%20y_o%20Lab%20%E2%80%93%20MedTech%20Prototyping%20Skills.pdf"
-     target="_blank"
-     style="background-color: #159957; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center;">
-    📜 View Assignment PDF
-  </a>
+<div class="figure-center">
+  <figure>
+    <img src="/images/6YO/load-cell-carlota.jpeg" alt="My 2D drawing of the reproduced load cell" width="500">
+    <figcaption>My drawing of the reproduced part.</figcaption>
+  </figure>
 </div>
 
-## Acrylic Phone Stand and Cardboard Box Laser-Cut
+Reproducing a load cell from the Hybrid III 6-year-old crash test dummy, working from a multi-view 2D engineering drawing to a 3D model. The exercise is less about modeling speed than about reading: inferring a feature's geometry from two or three orthographic views, and building the model so that design intent survives. A model that merely looks correct will break the moment a dimension changes; one built with proper constraints and relationships updates cleanly.
 
-Used Adobe Illustrator to create and design both a phone stand out of acrylic and a cardboard box, wich were then cut out and engraved using a lazer cutter. An acryic bender was also used on the phone stand.
+This was the most complex part in a series of reproduction exercises working from 2D engineering drawings.
 
-🔗 [Adobe Illustrator Files](https://github.com/carlotagillard/images/laser)
-
-## 3D printed Key-Chain and Pen/Desk Organizer
-
-
-STILL NEEED TO EDIT THISSS!!!!
-
-
-<div style="display: flex; justify-content: center; gap: 30px;">
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../images/distal/Testing at Hospital.jpeg" alt="Key Chains" width="350" style="border-radius: 10px;">
-    <p style="text-align: center; width: 350px;">First learned how to use OnShape by a small charm for my key chain.</p>
-  </div>
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="../images/distal/BroderTestWResidents.jpeg" alt="Pen Organizer" width="350" style="border-radius: 10px;">
-    <p style="text-align: center; width: 350px;">Image of the Pen Organizer I design using Solid Works (my first CAD project).</p>
-  </div>
+<div class="button-row">
+  <a href="[correct OnShape URL]" target="_blank" class="resource-link">OnShape Model</a>
+  <a href="/hybrid-iii-6yo-lab.pdf" target="_blank" class="resource-link">Assignment PDF</a>
 </div>
 
-## Mold
+## Laser-Cut Acrylic Phone Stand and Cardboard Box
 
----
+**Tools:** Adobe Illustrator, laser cutter, acrylic bender
 
-[← Back to Home](../index.md)
+I designed both pieces as vector cut files in Adobe Illustrator, then cut and engraved them on a laser cutter.
+
+<div class="figure-row">
+  <figure>
+    <img src="/images/laser/PHONE-STAND-SKETCH.png" alt="Hand sketch of the phone stand with dimensions" width="350">
+    <figcaption>Phone stand: initial sketch with dimensions.</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/laser/PHONE-STAND-VECTOR.png" alt="Illustrator cut file for the phone stand" width="350">
+    <figcaption>Phone stand: the Illustrator cut file.</figcaption>
+  </figure>
+</div>
+
+The acrylic stand was heat-bent to shape after cutting, which meant the flat pattern had to account for where the bends would go: the part is designed flat but has to be correct once it is no longer flat.
+
+<div class="figure-center">
+  <figure>
+    <img src="/images/laser/BOX-VECTOR.png" alt="Illustrator cut file for the cardboard box" width="500">
+    <figcaption>Box: the cut and engrave file.</figcaption>
+  </figure>
+</div>
+
+The box is a flat pattern too, designed so that once cut the pieces could fit into each other like puzzle pieces.
+
+## CAD to Cast Part
+
+**Tools:** OnShape, 3D printing, two-part casting
+
+I modeled a keychain in OnShape, printed it, and used the printed part as a master to cast a mould from it.
+
+<div class="figure-row">
+  <figure>
+    <img src="/images/skillbuilding/KEYCHAIN-CAD.png" alt="OnShape model of the keychain" width="350">
+    <figcaption>The OnShape model.</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/skillbuilding/KEYCHAIN-CAST.jpg" alt="The finished cast keychain" width="350">
+    <figcaption>The finished cast part.</figcaption>
+  </figure>
+</div>
+
+The main difficulty was avoiding trapped air: making sure no bubbles formed while mixing and pouring, and that the material reached every part of the mould rather than bridging over the finer detail. Both failures show up the same way, as voids in the finished part, and both come down to how you pour rather than what you pour.
+
+The same casting approach came back later on the distal forearm fracture model, where we tried a cast skin over the fracture zone before settling on neoprene.
+
+<div class="figure-row">
+  <figure>
+    <img src="/images/skillbuilding/ARM-MOLD-1.jpg" alt="Casting the skin for the fracture model" width="350">
+  </figure>
+  <figure>
+    <img src="/images/skillbuilding/ARM-MOLD-2.jpg" alt="The cast skin for the fracture model" width="350">
+  </figure>
+</div>
+
+## First CAD Project: Pen and Desk Organizer
+
+**Tools:** SolidWorks
+
+<div class="figure-center">
+  <figure>
+    <img src="/images/skillbuilding/PEN-ORGANIZER.jpg" alt="3D printed pen and desk organizer" width="450">
+    <figcaption>The printed organizer.</figcaption>
+  </figure>
+</div>
+
+My first CAD project, modeled in SolidWorks in high school. Rather than copying an existing design, I started from what was wrong with the organizers I already owned. Alongside the usual compartments for pens, pencils and highlighters, I added a thin extra-deep pocket for rulers, which had always ended up lying across everything else and getting in the way. Sizing a compartment around the thing that annoyed me turned out to be the whole design.
+
+## Java Coursework
+
+Data structures and algorithms in Java: lists, trees, sets, maps, and graphs, with an emphasis on abstract data types and recursion.
+
+[← Back to Home](/)
