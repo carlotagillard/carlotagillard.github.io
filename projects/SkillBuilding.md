@@ -21,14 +21,14 @@ title: Technical Explorations & Skill-Building
 
 <div class="figure-center">
   <figure>
-    <img src="/images/6YO/load-cell-instructions.png" alt="Provided 2D engineering drawing of the load cell" width="600">
+    <img src="/images/6YO/6YOLoadCell_Instructions.png" alt="Provided 2D engineering drawing of the load cell" width="600">
     <figcaption>The 2D drawing provided as a guide.</figcaption>
   </figure>
 </div>
 
 <div class="figure-center">
   <figure>
-    <img src="/images/6YO/load-cell-carlota.jpeg" alt="My 2D drawing of the reproduced load cell" width="500">
+    <img src="/images/6YO/LoadCellCarlota.jpeg" alt="My 2D drawing of the reproduced load cell" width="500">
     <figcaption>My drawing of the reproduced part.</figcaption>
   </figure>
 </div>
@@ -45,11 +45,11 @@ I designed both pieces as vector cut files in Adobe Illustrator, then cut and en
 
 <div class="figure-row">
   <figure>
-    <img src="/images/SkillBuilding/Dimensioned Drawings and Self Assesment.pdf" alt="Hand sketch of the phone stand with dimensions" width="350">
+    <img src="/images/SkillBuilding/sketchphonestand.jpeg" alt="Hand sketch of the phone stand with dimensions" width="350">
     <figcaption>Phone stand: initial sketch with dimensions.</figcaption>
   </figure>
   <figure>
-    <img src="/images/SkillBuilding/phone stand.ai" alt="Illustrator cut file for the phone stand" width="350">
+    <img src="/images/SkillBuilding/phoneStand.jpeg" alt="Illustrator cut file for the phone stand" width="350">
     <figcaption>Phone stand: the Illustrator cut file.</figcaption>
   </figure>
 </div>
@@ -58,7 +58,7 @@ The acrylic stand was heat-bent to shape after cutting, which meant the flat pat
 
 <div class="figure-center">
   <figure>
-    <img src="/images/SkillBuilding/CarlotaGillardBox.ai" alt="Illustrator cut file for the cardboard box" width="500">
+    <img src="/images/SkillBuilding/box.jpeg" alt="Illustrator cut file for the cardboard box" width="500">
     <figcaption>Box: the cut and engrave file.</figcaption>
   </figure>
 </div>
@@ -73,7 +73,7 @@ I modeled a keychain in OnShape, printed it, and used the printed part as a mast
 
 <div class="figure-row">
   <figure>
-    <img src="/images/SkillBuilding/Tool Bits 2 _ Carlota Gillard.pdf" alt="OnShape model of the keychain" width="350">
+    <img src="/images/SkillBuilding/peace.jpeg" alt="OnShape model of the keychain" width="350">
     <figcaption>The OnShape model.</figcaption>
   </figure>
   <figure>
