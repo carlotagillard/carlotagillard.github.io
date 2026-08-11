@@ -10,7 +10,7 @@ Fascinated by the mechanics of the body and the precision of architecture, I hav
 ## Featured Projects
 
 ### [Autonomous Robotics & Integrated Design](/projects/IDC.md)
-A C++ state machine driving line following, RFID waypoints, and XBee coordination across a five-robot team. Completed the full course; the wireless layer is where it fell short, and why. <br>
+An Arduino state machine driving line following, RFID waypoints, and XBee coordination across a five-robot team. Completed the full course; the wireless layer is where it fell short, and why. <br>
 *Arduino · QTI sensors · RFID · XBee*
 
 ### [Integrated Embedded System](/projects/lightbox.md)
