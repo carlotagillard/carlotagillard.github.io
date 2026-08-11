@@ -10,7 +10,7 @@ title: Autonomous Robotics & Integrated Design Challenge
 
 <img src="/images/IDC/IDC_top.png" alt="test" width="400">
 
-**Tools:** C++, Arduino, QTI line sensors, RFID, XBee, serial LCD
+**Tools:** Arduino, QTI line sensors, RFID, XBee, serial LCD
 
 ## Overview
 
@@ -29,7 +29,7 @@ Navigating this course was exceptionally difficult due to two major hurdles:
 
 ## System architecture
 
-The robot runs a deterministic C++ state machine where every transition is triggered by sensor input rather than elapsed time, ensuring that a slow trial degrades gracefully instead of desynchronising.
+The robot runs a deterministic Arduino state machine where every transition is triggered by sensor input rather than elapsed time, ensuring that a slow trial degrades gracefully instead of desynchronising.
 
 <div class="figure-center">
   <figure>
