@@ -18,8 +18,10 @@ Our three-person team built one of five autonomous robots for a multi-bot collab
 
 The course runs along a black line marked by seven hashmarks:
 - Hashmarks 1–5: The robot stops, flashes a unique onboard RGB LED color for each crossbar, and polls the RFID reader. An external LED lights up green if an RFID card is present or red if absent.
-- Hashmark 6: The line ends, and the robot crosses open floor using dead reckoning to reach the final segment.
-- Hashmark 7: The robot stops for good and switches from driving to communicating.
+- Waiting at Hash 5: After detecting the 5th hashmark, the bot executes a programmed delay based on its preset queue order. This ensures the preceding four bots safely cross the open white space to prevent collisions.
+- Crossing Open Space: Once the wait timer expires, the bot moves forward across the unguided white space. It travels straight by driving both  servos at the same speed in opposite direction until its sensors detect the 6th hash.
+- Hashmark 6: Upon hitting the 6th hash, the bot performs a precise 90-degree right turn to align with the new path. The bot transitions to following a new curved black line (which contains no additional hashes) until it successfully reaches Hash 7, where the line ends.
+- Hashmark 7: The robot stops for good (servos detatch) and switches from driving to communicating.
 
 Navigating this course was exceptionally difficult due to two major hurdles:
 - Precision Sensor Placement: Getting the onboard LEDs to flash correctly when identifying RFID tags required strict mechanical calibration. Because the RFID sensor has a wide detection range, positioning it too far forward caused it to trigger prematurely on the wrong or previous hashmark, requiring us to place the sensor precisely parallel to the back half of the bot.
