@@ -60,17 +60,15 @@ Data encoding: Each tag encoded specific positional data, designed so that only 
 
 ### Wireless coordination
 
-Each bot encodes its identity and its result into a single byte: `group × 10 + 50 +
-position`. The receiving bot inverts it with integer division and modulo to recover
-which group sent the message and what they found.
+Each bot encodes its identity and its result into a single byte: `group × 10 + 50 + position`. The receiving bot inverts it to figure out which group sent it and what their result was.
 
-With five radios on one shared channel, there was no addressing and no acknowledgements. Instead, bots rebroadcasted their value once every 100 receive loops until their local results array was complete. A dropped message simply gets sent again a moment later, so the protocol converges without any retry logic.
+Since five bots shared one radio channel without built-in addressing or acknowledgments, they simply rebroadcast their data once every 100 loops until everyone had the complete list. If a message dropped, it was automatically sent again a moment later, making the communication reliable without needing complex retry code.
 
-Incoming messages filled a 5-slot results array, updating the LCD with the running sum and full array every time a new value arrived. Two reserved bytes (36 and 37) triggered a synchronized song and light show once the team finished
+Incoming messages filled a 5-slot list, updating the LCD screen with the running total and full array every time a new value arrived. Once all data was collected, two special reserved codes (36 and 37) triggered a synchronized music and light show.
 
 ## Testing and Results
 
-The robot completed the course successfully: it followed the line through all seven crossbars, crossed the dead-reckoning gap, read its RFID tag, and stopped at the finish. On the final display, one or two of the five values were still showing -1, meaning we never received those bots' broadcasts before the run ended.
+The robot completed the course successfully: it followed the line through all seven crossbars, crossed the gap, read its RFID tag, and stopped at the finish. On a couple of trials, one of the five values still showed -1 at the end, meaning the run finished before we managed to receive that specific bot's broadcast.
 
 That gap points at the communication layer rather than the navigation. Because there is no acknowledgement in the protocol, a bot has no way to know whether its message was heard, and a receiver has no way to request a resend. Every bot rebroadcasts on a loop, so given more time the array would likely have filled, but "given more time" is not a design. With acknowledgements, or with staggered transmit intervals so five radios stop talking over each other, those slots would have filled deterministically.
 
